@@ -14,9 +14,10 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService:AuthService,private router:Router) { }
 
   login() {
+    // alert("Login Clicked")
     this.authService.login({ username: this.username, password: this.password })
       .subscribe(response => {
         localStorage.setItem('token', response.token);

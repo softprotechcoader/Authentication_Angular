@@ -1,9 +1,11 @@
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './Pages/login/login.component';
+// import { LoginComponent } from './Pages/login/login.component;
 import { LayoutComponent } from './Pages/layout/layout.component';
-import { authGuard } from './auth.guard';
+// import { authGuard } from './auth.guard';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
+import { LoginComponent } from './Pages/login/login.component';
+import { authGuard } from './auth.guard';
 
 
 
@@ -27,10 +29,10 @@ export const routes: Routes = [
     {path:'**',redirectTo:'login'}
 ];
 
-@NgModule({
-    imports:[RouterModule.forRoot(routes)],
-    exports:[RouterModule]
-})
-export class AppRoutingModule{
+// @NgModule({
+//     imports:[RouterModule.forRoot(routes)],
+//     exports:[RouterModule]
+// })
+// export class AppRoutingModule{
     
-}
+// }
